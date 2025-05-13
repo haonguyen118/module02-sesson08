@@ -23,6 +23,9 @@ export default function Home() {
         <Link to={"/Ex04"} style={{ textDecoration: "none" }}>
           Exercise04
         </Link>
+        <Link to={"/Ex05"} style={{ textDecoration: "none" }}>
+          Exercise05
+        </Link>
       </div>
       <h1>Home</h1>
     </>

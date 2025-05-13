@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 export default function ComponentHeader() {
   return (
@@ -6,19 +7,13 @@ export default function ComponentHeader() {
       <div style={{ display: "flex" }}>
         <ul>
           <li>
-            <NavLink to="/" className="text-blue-600 underline">
-              Home
-            </NavLink>
+            <NavLink to="/">Home</NavLink>
           </li>
           <li>
-            <NavLink to="/home/contact" className="text-blue-600 underline">
-              Contact
-            </NavLink>
+            <NavLink to="/contact">Contact</NavLink>
           </li>
           <li>
-            <NavLink to="/home/detail" className="text-blue-600 underline">
-              Detail
-            </NavLink>
+            <NavLink to="/detail">Detail</NavLink>
           </li>
         </ul>
       </div>
