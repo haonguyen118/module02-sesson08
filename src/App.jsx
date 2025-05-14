@@ -11,11 +11,16 @@ import Ex04 from "../Ex04";
 import Contact from "./Component/Contact";
 import ComponentHeader from "./Component/ComponentHeader";
 import Detail from "./Component/Detail";
+import ListUser from "./Component/ListUser";
+import UserDetail from "./Component/UserDetail";
+import Ex06 from "./Component/Ex06";
 
 function App() {
   return (
     <>
       <Routes>
+        <Route path="/listUser" element={<ListUser />} />
+        <Route path="/userDetail" element={<UserDetail />} />
         <Route path="/" element={<Home />} />
         <Route path="/Ex01" element={<Ex01 />} />
         <Route path="/login" element={<Ex02 />} />
@@ -24,6 +29,7 @@ function App() {
         <Route path="/Ex05" element={<ComponentHeader />} />
         <Route path="/detail" element={<Detail />} />
         <Route path="*" element={<Ex03 />} />
+        <Route path="/Ex06" element={<Ex06 />} />
       </Routes>
     </>
   );
